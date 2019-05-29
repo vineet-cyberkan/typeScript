@@ -41,6 +41,48 @@ Before we get started with the concepts we need to set up our development envirn
 'npm install -g typescript' this will install typescript globally 
 'tsc -v' to check version of typescript on your machine
 
+e.g create a file with main.ts 
+
+	+++++++ content of file start +++++++
+
+	let msg = 'hello world';
+	console.log(msg);
+
+	+++++++ content of file end +++++++
+
+to compile this down using typescript compiler 
+
+command to compile the file 
+'tsc main.ts' you can ignore file extension eg. 'tsc main' 
+
+'node ch01/main'    // to test the file you don't need a browser you can test it in terminal 
+hello world  // file output 
+
+above mentioned is very first typescript program
+
+A module has own scopes whereas script share the global scope. main.ts is being treated as a script rather than a module untill you add  import or export statement typescript treats this file as a module instead of a script. so we will add export {} in the bigining of file. which export nothing.
+
+then main.ts will look like as 
+
+	+++++++ content of file start +++++++
+
+	export {}
+
+	let msg = 'hello world';
+
+	console.log(msg);
+
+	+++++++ content of file end +++++++
+
+## automatic recompile typescript file 
+:- in addition to our workflow here would be to automatically recompile the typescript file whenever there is any change in file. We can do that by using watch option of the typescript compiler.
+'tsc <filename> --watch'
+
+after running above mentioned command when ever you save the change to the file it will automatically compile the file
+
+this was overview of typescript how typescript works. As you can see you have a typescript file which get transpiled to a javascript file which is then used in your application 
+
+Let's now focus on the various concepts that javascript brings to the Table 
 
 
 ## variable declarations
