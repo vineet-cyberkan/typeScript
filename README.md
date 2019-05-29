@@ -33,9 +33,13 @@ Before we get started with the concepts we need to set up our development envirn
 
 
 ## Envirnment setup
-1). 
+1). To work on typescript first you have to download and install node.js
+:- Once it's installed to test use 
+'node -v' to check node version
 
-
+2).  to install typeScript
+'npm install -g typescript' this will install typescript globally 
+'tsc -v' to check version of typescript on your machine
 
 
 
