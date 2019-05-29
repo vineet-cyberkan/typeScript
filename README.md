@@ -6,18 +6,18 @@ git remote add origin https://github.com/vineet-cyberkan/typeScript.git
 git push -u origin master
 
 
-#what & whay? ( what is typescript and why we should learn it? )
+## what & whay? ( what is typescript and why we should learn it? )
 
-#Envirnment setup
+## Envirnment setup
 
-#variable declarations
+## variable declarations
 
-#variable types
+## variable types
 
-#functions
+## functions
 
-#interface
+## interface
 
-#class
+## class
 
-#Access modifiers
+## Access modifiers
