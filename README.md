@@ -86,6 +86,30 @@ Let's now focus on the various concepts that javascript brings to the Table
 
 
 ## variable declarations
+:- variable declarations
+Unlike Tradtional Javascript, Typescript encourages the use of let T const keywords for variable declarations if you played around the Javascript for a while you probably know how to scope and var declarations can trick you javascript has only global scope and function scope. There is no block label scope. This is something that often mislead programmers used to other languages. To make things worse. It is also not an error to re-declare the same variable in multiple times. 'let' and 'const' declaration solve these problems. Both 'let' and 'const' support block level scoping and you can't re-declare variable multiple times with 'let' or 'const' . 
+
+//e.g
+let x = 10;
+const y = 20;
+
+// if we redeclare x it will give an error
+let x = 30;  
+
+Now the Question is
+Q). What is the diffrence between one over other
+Ans). 'let' declaration can be done without initialization where as 'const' declaration are always to be initialzed with a value. And 'const' declaration once assigned can never be reassigned. So we can have a declaration 
+
+let sum ; // we can assign 
+
+const title = 'cyberkan' ; // we cann't have. 
+
+We will get an error 'cont' declaration must be initilzed. So when to choose one over other. If you feel a variable must never be reassigned then use 'const' declaration. If not then go with let declaration.
+e.g the sum of two numbers can change but title of an application may never change. So 'let' declaration for numbers and 'const' declaration for title.
+
+Typescript alreay helping us to reduce the ammount of both in our code. So that is about variable declaration in typescript.
+
+
 
 ## variable types
 
