@@ -73,3 +73,11 @@ a = true;
 let multitype: number | boolean ;
 multitype = 20;
 multitype = true;
+
+
+// working on functions
+function add(num1:number, num2:number): number {
+    return num1 + num2;
+}
+
+add(5, 15);

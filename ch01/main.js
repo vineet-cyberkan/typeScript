@@ -50,3 +50,8 @@ a = true;
 var multitype;
 multitype = 20;
 multitype = true;
+// working on functions
+function add(num1, num2) {
+    return num1 + num2;
+}
+add(5, 15);
